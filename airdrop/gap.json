@@ -1,0 +1,25 @@
+{
+  "name": "keys-pgp",
+  "path": "/keys/pgp",
+  "definition": "Pretty Good Privacy (PGP) keys",
+  "children": [
+    "gap://keys/pgp/*.asc"
+  ],
+  "dependencies": {
+    "web": [
+      "gap://tech/js/node_modules/jquery",
+      "gap://tech/js/node_modules/tether/dist/js/tether.js",
+      "gap://tech/js/node_modules/popper.js/packages/popper/dist/umd/popper.js",
+      "gap://tech/js/node_modules/bootstrap/dist/js/bootstrap.js",
+      "gap://media/text/css/bootswatch/slate/bootstrap.css",
+      "gap://media/text/css/gapp-address-bar/abar.css"
+    ]
+  },
+  "views": {
+    "content": "gap://tech/js/node_modules/gapp-keys-pgp/gapp-gpg.html",
+    "summary": "gap://tech/js/node_modules/gapp-keys-pgp/gapp-gpg.html",
+    "head": "gap://tech/js/node_modules/gapp/gapp-head.html",
+    "fullpage": "gap://tech/js/node_modules/gapp/gapp-wrapper.html"
+  },
+  "gapp": "gap://tech/js/node_modules/gapp-keys-pgp"
+}
